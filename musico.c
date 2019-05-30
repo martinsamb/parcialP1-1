@@ -158,7 +158,7 @@ int musico_alta(Musico array[], int size, int* contadorID)
         {
             if( utn_getName("\nNombre del musico: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre) == 0 &&
                 utn_getName("\nApellido del musico: ","\nError",1,TEXT_SIZE,1,array[posicion].apellido) == 0 &&
-                utn_getUnsignedInt("\nEdaddel musico: ","\nError",1,3,1,&array[posicion].edad) == 0 &&
+                utn_getUnsignedInt("\nEdad del musico: ","\nError",1,3,1,&array[posicion].edad) == 0 &&
                 utn_getUnsignedInt("\nID Orquesta: ","\nError",1,sizeof(int),1,&array[posicion].idOrquesta) == 0 &&
                 utn_getUnsignedInt("\nID Instrumento: ","\nError",1,sizeof(int),1,&array[posicion].idInstrumento) == 0 )
             {

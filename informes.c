@@ -408,11 +408,11 @@ int listar_musico_instrumentoViento(Musico arrayM[], Instrumento arrayI[], int s
     if(arrayM!=NULL && sizeM>=0 && arrayI!=NULL && sizeI>=0)
     {
         musico_ordenarPorApellido(arrayM,sizeM);
-        for(i=0;i<sizeM;i++)                                                                            // posicion de la primer entidad
+        for(i=0;i<sizeM;i++)                                  // posicion de musico
         {
             if(arrayM[i].isEmpty!=1)
             {
-                if(instrumento_buscarID(arrayI,sizeI,arrayM[i].idInstrumento,&j)==-1)                           //Obtengo la posicion de la 2da entidad buscando por el campo en comun
+                if(instrumento_buscarID(arrayI,sizeI,arrayM[i].idInstrumento,&j)==-1)      //Obtengo la posicion de Instrumento buscando por el campo en comun
                     j=-1;
                 if(arrayI[j].tipo!=2 && arrayI[j].tipo!=3)
                 {
